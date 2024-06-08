@@ -452,21 +452,40 @@
     {
         "DisplayName":"Race Duration",
         "Category":"ACC Gameplay Settings",
-        "Description":"Duration of duration sessions",
-        "Keywords":"practice,qualification,race",
-        "FieldName":"sessions",
-        "InputType":"enum",
+        "Description":"Duration of race session",
+        "Keywords":"duration,race",
+        "FieldName":"sessionDurationMinutes",
+        "InputType":"number",
+        "DefaultValue":"20",
         "IsFlagArgument":false,
-        "ParamFieldName":"sessions",
+        "ParamFieldName":"sessions.2.sessionDurationMinutes",
         "IncludeInCommandLine":false,
-        "DefaultValue":"[{\"hourOfDay\":6,\"dayOfWeekend\":2,\"timeMultiplier\":1,\"sessionType\":\"P\",\"sessionDurationMinutes\":10},{\"hourOfDay\":12,\"dayOfWeekend\":2,\"timeMultiplier\":1,\"sessionType\":\"Q\",\"sessionDurationMinutes\":10},{\"hourOfDay\":18,\"dayOfWeekend\":3,\"timeMultiplier\":2,\"sessionType\":\"R\",\"sessionDurationMinutes\":20}]",
-        "EnumValues":{
-            "[{\"hourOfDay\":6,\"dayOfWeekend\":2,\"timeMultiplier\":1,\"sessionType\":\"P\",\"sessionDurationMinutes\":10},{\"hourOfDay\":12,\"dayOfWeekend\":2,\"timeMultiplier\":1,\"sessionType\":\"Q\",\"sessionDurationMinutes\":10},{\"hourOfDay\":18,\"dayOfWeekend\":3,\"timeMultiplier\":2,\"sessionType\":\"R\",\"sessionDurationMinutes\":20}]": "Default",
-            "[{\"hourOfDay\":6,\"dayOfWeekend\":2,\"timeMultiplier\":1,\"sessionType\":\"P\",\"sessionDurationMinutes\":30},{\"hourOfDay\":12,\"dayOfWeekend\":2,\"timeMultiplier\":1,\"sessionType\":\"Q\",\"sessionDurationMinutes\":20},{\"hourOfDay\":18,\"dayOfWeekend\":3,\"timeMultiplier\":2,\"sessionType\":\"R\",\"sessionDurationMinutes\":40}]": "Medium (with practice)",
-            "[{\"hourOfDay\":6,\"dayOfWeekend\":2,\"timeMultiplier\":1,\"sessionType\":\"P\",\"sessionDurationMinutes\":60},{\"hourOfDay\":12,\"dayOfWeekend\":2,\"timeMultiplier\":1,\"sessionType\":\"Q\",\"sessionDurationMinutes\":30},{\"hourOfDay\":18,\"dayOfWeekend\":3,\"timeMultiplier\":2,\"sessionType\":\"R\",\"sessionDurationMinutes\":60}]": "Long (with practice)",
-            "[{\"hourOfDay\":12,\"dayOfWeekend\":2,\"timeMultiplier\":1,\"sessionType\":\"Q\",\"sessionDurationMinutes\":10},{\"hourOfDay\":18,\"dayOfWeekend\":3,\"timeMultiplier\":2,\"sessionType\":\"R\",\"sessionDurationMinutes\":20}]": "Short (without practice)",
-            "[{\"hourOfDay\":12,\"dayOfWeekend\":2,\"timeMultiplier\":1,\"sessionType\":\"Q\",\"sessionDurationMinutes\":20},{\"hourOfDay\":18,\"dayOfWeekend\":3,\"timeMultiplier\":2,\"sessionType\":\"R\",\"sessionDurationMinutes\":40}]": "Medium (without practice)",
-            "[{\"hourOfDay\":12,\"dayOfWeekend\":2,\"timeMultiplier\":1,\"sessionType\":\"Q\",\"sessionDurationMinutes\":30},{\"hourOfDay\":18,\"dayOfWeekend\":3,\"timeMultiplier\":2,\"sessionType\":\"R\",\"sessionDurationMinutes\":60}]": "Long (without practice)"
-        }
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Qualifiying Duration",
+        "Category":"ACC Gameplay Settings",
+        "Description":"Duration of qualify session",
+        "Keywords":"duration,qualify",
+        "FieldName":"sessionDurationMinutes",
+        "InputType":"number",
+        "DefaultValue":"8",
+        "IsFlagArgument":false,
+        "ParamFieldName":"sessions.1.sessionDurationMinutes",
+        "IncludeInCommandLine":false,
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Practice Duration",
+        "Category":"ACC Gameplay Settings",
+        "Description":"Duration of practice session",
+        "Keywords":"duration,practice",
+        "FieldName":"sessionDurationMinutes",
+        "InputType":"number",
+        "DefaultValue":"10",
+        "IsFlagArgument":false,
+        "ParamFieldName":"sessions.0.sessionDurationMinutes",
+        "IncludeInCommandLine":false,
+        "EnumValues":{}
     }
 ]
